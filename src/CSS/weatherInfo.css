@@ -1,0 +1,166 @@
+.paper {
+  width: 380px;
+  border: 1px solid #d1d1d198;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 0 1px rgb(225, 225, 225);
+  background: linear-gradient(
+    0deg,
+    rgba(137, 27, 168, 0.18) 0%,
+    rgb(137, 27, 168) 100%
+  );
+  animation-name: start;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.component-text {
+  text-shadow: 1px 1px 1px black;
+  font-family: cursive;
+}
+
+.temp-feel {
+  float: right;
+  margin-right: 18px;
+  color: white;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.lat-lon {
+  /* float: left;
+  margin-left: 18px; */
+  color: white;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.city {
+  justify-content: flex-end;
+  margin-left: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  font-size: x-large;
+  margin-top: 25px;
+}
+
+.temp {
+  justify-content: flex-start;
+  margin-left: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 20px;
+  font-size: xx-large;
+}
+
+.cloudy-ico {
+  scale: 0;
+  height: 70px;
+  width: 70px;
+  animation-name: cloud-a;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.cloudy {
+  /* margin-top: 28px; */
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cloudy-col {
+  /* margin-top: 28px; */
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sun {
+  animation: sun-spin infinite 20s linear;
+}
+
+.welcome-text {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px black;
+  color: rgb(137, 27, 168);
+}
+
+.ML10 {
+  margin-left: 10px;
+}
+
+.MLB {
+  margin-left: 10px;
+  margin-top: 28px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes sun-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes start {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 215px;
+  }
+} */
+
+@keyframes start {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cloud-a {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .paper {
+    width: 290px;
+  }
+}

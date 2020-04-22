@@ -1,0 +1,97 @@
+.main {
+    margin: 20px;
+  }
+
+.search-input {
+  width: 300px;
+  font-family: cursive;
+  font-size: 14px;
+  border: 3px solid rgb(137, 27, 168);;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 8px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  background: #ffffff87;
+}
+
+.search-input-hover {
+    width: 300px;
+    font-family: cursive;
+    font-size: 14px;
+    border: 3px solid rgb(137, 27, 168);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 8px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    animation-name: bar-hov;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    background: #ffffff87;
+  }
+
+.search-button {
+  width: 65px;
+  padding: 8px;
+  margin-left: -1px;
+  margin: -1px;
+  font-family: cursive;
+  font-size: 14px;
+  border: 3px solid rgb(137, 27, 168);
+  border-left-color: rgb(137, 27, 168);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: repeating-radial-gradient;
+  border-left: none;
+  color: white;
+  font-weight: bold;
+  background: rgb(137, 27, 168);
+  cursor: pointer;
+}
+
+.search-button-hover {
+    width: 65px;
+    padding: 8px;
+    margin-left: -1px;
+    margin: -1px;
+    font-family: cursive;
+    font-size: 14px;
+    border: 3px solid rgb(137, 27, 168);
+    border-left-color: rgb(137, 27, 168);
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: repeating-radial-gradient;
+    border-left: none;
+    color: white;
+    font-weight: bold;
+    background: rgb(137, 27, 168);
+    cursor: pointer;
+    animation-name: bar-hov;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes bar-hov {
+    from {box-shadow: 0 0 0px rgb(201, 32, 183);}
+    to {box-shadow: 0 0 6px rgb(201, 32, 183);}
+  }
+
+  @keyframes bar-back-hov {
+    from {box-shadow: 0 0 6px rgb(201, 32, 183);}
+    to {box-shadow: 0 0 0px rgb(201, 32, 183);}
+  }
+
+  @media only screen and (max-width: 530px) {
+    .search-input {
+      width: 190px;
+    }
+
+    .search-input-hover {
+      width: 190px;
+    }
+  }
