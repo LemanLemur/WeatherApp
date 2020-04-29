@@ -10,12 +10,12 @@ export default function ShowWeather() {
   const [city, setCity] = useState("");
   const [oldCity, setOldCity] = useState("");
   const [hoverS, setHoverS] = useState(false);
-  const apiOWM = "http://api.openweathermap.org/data/2.5/weather?q=";
-  const apiForecast = "http://api.openweathermap.org/data/2.5/forecast?q=";
+  const apiOWM = "https://api.openweathermap.org/data/2.5/weather?q=";
+  const apiForecast = "https://api.openweathermap.org/data/2.5/forecast?q=";
   const apiKey =
     ",pl&units=metric&appid=109879588a9b5658c2a7820a546cb0ca&cnt=3";
   const apiUV =
-    "http://api.openweathermap.org/data/2.5/uvi?appid=109879588a9b5658c2a7820a546cb0ca&lat=";
+    "https://api.openweathermap.org/data/2.5/uvi?appid=109879588a9b5658c2a7820a546cb0ca&lat=";
 
    async function handleButtonClick() {
     if (oldCity !== city) {
