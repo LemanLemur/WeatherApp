@@ -25,7 +25,7 @@
 
 .component-text {
   text-shadow: 1px 1px 1px black;
-  font-family: cursive;
+  font-family: "Comic Sans", cursive;
 }
 
 .temp-feel {
@@ -96,7 +96,7 @@
 }
 
 .welcome-text {
-  font-family: cursive;
+  font-family: "Comic Sans", cursive;
   font-size: 24px;
   font-weight: 600;
   text-shadow: 1px 1px 0px black;
